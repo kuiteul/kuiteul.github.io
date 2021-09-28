@@ -30,7 +30,7 @@ header {
 #logo{
    
     width: 40%;
-    margin-top: 2%;
+    margin-top: 1%;
 }
 
 #logo img {
@@ -43,6 +43,8 @@ header {
 #nav-bar {
 
     width: 60%;
+    height: 100px;
+    margin-top: 2%;
 }
 
 
@@ -52,11 +54,19 @@ ul {
     list-style: none;
     width: 80%;
     margin-left: 14%;
+    
 }
 
 li {
     padding: 2%;
-    margin-left: 2%;
+    margin-left: 1%;
+    width: 20%;
+    text-align: center;
+}
+
+li:hover{
+    border-bottom: 3px solid;
+    border-color: #3882F6;
 }
 
 li a {
@@ -283,4 +293,20 @@ footer p {
    
 }
 
+
+/**
+** Area of media query
+**/
+
+@media only screen and (max-width: 800px) {
+    
+    .sub-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid;
+    
+    }
+
+}
 
