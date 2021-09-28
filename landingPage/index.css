@@ -3,6 +3,7 @@ body {
     margin-top: 0%;
     margin-right: 0%;
     margin-left: 0%;
+    margin-bottom: 0%;
 }
 .container {
     display: flex;
@@ -182,7 +183,7 @@ figure {
 
 .second-level blockquote {
     width: 67.5%;
-    margin-left: 16.5%;
+    margin-left: 20%;
     border: 1px solid;
     font-size: 36px;
     font-style: italic;
@@ -231,10 +232,23 @@ figure {
 
 #sign{
     margin-left: 5%;
+    width: 20%;
 }
 
-#infos h3, #infos p {
-    margin-left: 15%;
+#infos h2, #infos p {
+    margin-left: 10%;
+}
+
+
+#sign button {
+    
+    width: 65%;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: #3882F6;
+    border-color: white;
+    color: white;
+    height: 40px;
 }
 
 
@@ -248,9 +262,12 @@ footer {
     text-align: center;
     text-transform: capitalize;
     height: 100px;
+    margin-bottom: 0%;
 }
 
 footer p {
     margin-top: 3%;
     border: 1px solid;
 }
+
+
