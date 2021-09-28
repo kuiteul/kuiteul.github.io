@@ -1,13 +1,21 @@
+body {
+    
+    margin-top: 0%;
+    margin-right: 0%;
+    margin-left: 0%;
+}
 .container {
     display: flex;
+    flex-direction: column;
+    
+    width: 100%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .page-top {
 
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    right: 0%;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
     background-color: #1F2937;
     color: white;
 }
@@ -110,10 +118,7 @@ h1 {
 **/
 
 main {
-    position: absolute;
-    top: 80%;
-    left: 0%;
-    right: 0%;
+
     border: 1px solid;
     height: auto;
     display: flex;
