@@ -239,16 +239,26 @@ figure {
     margin-left: 10%;
 }
 
+#infos h2{
+    margin-top: 7%;
+}
+
+#infos p{
+    margin-top: -2%;
+}
 
 #sign button {
     
     width: 65%;
-    border: 1px solid;
+    border: 2px solid;
     border-radius: 5px;
     background-color: #3882F6;
     border-color: white;
     color: white;
-    height: 40px;
+    height: 35px;
+    margin-top: 30%;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 
