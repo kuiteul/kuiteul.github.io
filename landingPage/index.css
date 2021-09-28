@@ -106,7 +106,7 @@ h1 {
 }
 
 /**
-** this is the first-level of main
+** this is the first-level of main block
 **/
 
 main {
@@ -115,7 +115,7 @@ main {
     left: 0%;
     right: 0%;
     border: 1px solid;
-    z-index: 2;
+    height: auto;
     display: flex;
     flex-direction: column;
 }
@@ -123,10 +123,11 @@ main {
 .first-level {
     display: flex;
     flex-direction: column;
-    height: 500px;
+    height: 470px;
     width: 70%;
     margin-left: 15%;
     opacity: 0.8;
+    border: 1px solid;
 }
 
 .first-level p {
@@ -162,4 +163,27 @@ figure {
 /**
 ** Below are codes of level 2 of the main block
 **/
+
+.second-level {
+    border: 1px solid;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    background-color: #E5E7EB;
+}
+
+.second-level blockquote {
+    width: 67.5%;
+    margin-left: 16.5%;
+    
+    border: 1px solid;
+    font-size: 36px;
+    font-style: italic;
+    
+
+}
 
