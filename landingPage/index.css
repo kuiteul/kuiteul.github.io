@@ -1,13 +1,12 @@
 body {
-    
+
     margin-top: 0%;
     margin-right: 0%;
     margin-left: 0%;
 }
 .container {
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;  
     width: 100%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -184,11 +183,74 @@ figure {
 .second-level blockquote {
     width: 67.5%;
     margin-left: 16.5%;
-    
     border: 1px solid;
     font-size: 36px;
     font-style: italic;
-    
-
+    margin-top: 10%;
+    opacity: 0.8;
 }
 
+#cite {
+    text-align: right;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: normal;
+    border: 1px solid;
+    margin-left: 65%;
+}
+
+/**
+* Code css for the last level
+**/
+
+.third-level {
+    height: 350px;
+}
+
+
+
+#register {
+    width: 75%;
+    margin-left: 15%;
+    height: 160px;
+    margin-top: 7%;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    background-color: #3882F6;
+    color: white;
+}
+
+#register div{
+    border: 1px solid;
+}
+
+#infos {
+    width: 70%;
+}
+
+#sign{
+    margin-left: 5%;
+}
+
+#infos h3, #infos p {
+    margin-left: 15%;
+}
+
+
+/**
+* Code css of footer
+**/
+
+footer {
+    background-color: #1F2937;
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    height: 100px;
+}
+
+footer p {
+    margin-top: 3%;
+    border: 1px solid;
+}
