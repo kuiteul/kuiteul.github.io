@@ -30,7 +30,6 @@ header {
 #logo{
    
     width: 40%;
-    border: 1px solid;
     margin-top: 2%;
 }
 
@@ -73,7 +72,7 @@ li a {
     display: flex;
     width: 80%;
     margin-left: 14%;
-    padding-bottom: 10%;
+    padding-bottom: 4%;
 }
 
 #sub-header-left {
@@ -124,8 +123,6 @@ h1 {
 
 main {
 
-    border: 1px solid;
-    height: auto;
     display: flex;
     flex-direction: column;
 }
@@ -137,7 +134,6 @@ main {
     width: 70%;
     margin-left: 15%;
     opacity: 0.8;
-    border: 1px solid;
 }
 
 .first-level p {
@@ -161,8 +157,7 @@ main {
 }
 
 figure {
-    border: 4px solid;
-    border-color: #3882F6;
+   
     border-radius: 15px;
     width: 95%;
     margin-left: 0%;
@@ -182,7 +177,7 @@ figure img {
 **/
 
 .second-level {
-    border: 1px solid;
+   
     margin-top: 0%;
     margin-left: 0%;
     margin-right: 0%;
@@ -196,7 +191,6 @@ figure img {
 .second-level blockquote {
     width: 67.5%;
     margin-left: 20%;
-    border: 1px solid;
     font-size: 36px;
     font-style: italic;
     margin-top: 10%;
@@ -208,7 +202,6 @@ figure img {
     font-size: 22px;
     font-weight: bold;
     font-style: normal;
-    border: 1px solid;
     margin-left: 65%;
 }
 
@@ -228,15 +221,13 @@ figure img {
     height: 160px;
     margin-top: 7%;
     border: none;
-    border-radius: 10px;
+    border-radius: 10px;;
     display: flex;
     background-color: #3882F6;
     color: white;
 }
 
-#register div{
-    border: 1px solid;
-}
+
 
 #infos {
     width: 70%;
@@ -289,7 +280,7 @@ footer {
 
 footer p {
     margin-top: 3%;
-    border: 1px solid;
+   
 }
 
 
