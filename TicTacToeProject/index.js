@@ -1,3 +1,7 @@
+
+let playSelection;
+let computerSelection;
+
 function computerPlay() {
 
     let computerResult = parseInt(Math.random() * 3);
@@ -19,9 +23,6 @@ function computerPlay() {
 
 }
 
-let playSelection = "cissor";
-let computerSelection = computerPlay();
-
 // Function playRound
 function playRound(playSelection, computerSelection) {
 
@@ -31,11 +32,14 @@ function playRound(playSelection, computerSelection) {
             
             case "cissor" :
                 console.log("You won! rock beats cissor!");
+                break;
 
             case "paper" :
                 console.log("You lose! paper beats rock");
+                break;
             default : 
                 console.log("No winner!");
+                break;
 
         }
     
@@ -45,11 +49,14 @@ function playRound(playSelection, computerSelection) {
             
             case "cissor" :
                 console.log("You lose! cissor beats paper!");
+                break;
 
             case "rock" :
                 console.log("You won! paper beats rock");
+                break;
             default : 
                 console.log("No winner!");
+                break;
 
         }
         
@@ -60,11 +67,14 @@ function playRound(playSelection, computerSelection) {
             
             case "rock" :
                 console.log("You lose! rock beats cissor!");
+                break;
 
             case "paper" :
                 console.log("You won! cissor beats paper");
+                break;
             default :
                 console.log("No winner!");
+                break;
 
         }
     }
@@ -74,10 +84,28 @@ function playRound(playSelection, computerSelection) {
 
 function game(userInput) {
 
-    for(let i = 0; i < 4; i++) {
+    for(let i = 0; i <= 4; i++) {
 
         userInput = prompt("Enter either 'rock' or 'paper' or 'cissor' ");
+
+        userInput = userInput.toLowerCase();
+
+        /*
+        ** We check if user entered the correct word that we ask to him
+        */
+
+        while(userInput != "rock" && userInput != "paper" && userInput != "cissor") {
+            userInput = prompt("You entered wrong word! Enter either 'rock' or 'paper' or 'cissor'");
+            userInput = userInput.toLowerCase();
+        }
+
+        playSelection = userInput;
+        computerSelection = computerPlay();
+
+        console.log(playRound(playSelection, computerSelection));
 
     } 
     
 }
+
+game();
