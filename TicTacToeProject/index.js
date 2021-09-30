@@ -1,6 +1,9 @@
 
 let playSelection;
 let computerSelection;
+let computerResult = 0;
+let userResult = 0;
+let counter = 0;
 
 function computerPlay() {
 
@@ -32,10 +35,12 @@ function playRound(playSelection, computerSelection) {
             
             case "cissor" :
                 console.log("You won! rock beats cissor!");
+                counter = 1;
                 break;
 
             case "paper" :
                 console.log("You lose! paper beats rock");
+                counter = 2;
                 break;
             default : 
                 console.log("No winner!");
@@ -49,10 +54,12 @@ function playRound(playSelection, computerSelection) {
             
             case "cissor" :
                 console.log("You lose! cissor beats paper!");
+                counter = 2;
                 break;
 
             case "rock" :
                 console.log("You won! paper beats rock");
+                counter = 1;
                 break;
             default : 
                 console.log("No winner!");
@@ -67,10 +74,12 @@ function playRound(playSelection, computerSelection) {
             
             case "rock" :
                 console.log("You lose! rock beats cissor!");
+                counter = 2;
                 break;
 
             case "paper" :
                 console.log("You won! cissor beats paper");
+                counter = 1;
                 break;
             default :
                 console.log("No winner!");
@@ -94,8 +103,8 @@ function game(userInput) {
         ** We check if user entered the correct word that we ask to him
         */
 
-        while(userInput != "rock" && userInput != "paper" && userInput != "cissor") {
-            userInput = prompt("You entered wrong word! Enter either 'rock' or 'paper' or 'cissor'");
+        while(userInput != "rock" && userInput != "paper" && userInput != "cissor") { 
+            userInput = prompt("WARNING! Incorrect Entry. 'rock' or 'paper' or 'cissor'");
             userInput = userInput.toLowerCase();
         }
 
@@ -104,8 +113,30 @@ function game(userInput) {
 
         console.log(playRound(playSelection, computerSelection));
 
+        /*
+        ** the code below count the user and computer victory(ies)
+        **/
+
+        if(counter == 1){
+            userResult = userResult + 1;
+            counter = 0; // We put count from scratch to free his value otherwise it will increase
+        }
+        else if(counter == 2){
+            computerResult = computerResult + 1;
+            counter = 0; 
+        }
+
     } 
     
 }
 
 game();
+
+if(userResult > computerResult) 
+    console.log("Congratulations! You won! you beat computer "+userResult+" time(s)");
+
+else if(userResult < computerResult)
+    console.log("Sorry! You lose! computer beats you "+computerResult+" time(s)");
+
+else 
+    console.log("No winner! Your scores are equals");
