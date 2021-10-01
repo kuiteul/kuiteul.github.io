@@ -26,72 +26,6 @@ function computerPlay() {
 
 }
 
-// Function playRound
-function playRound(playSelection, computerSelection) {
-
-    if(playSelection == "rock" ) {
-        
-        switch (computerSelection){
-            
-            case "cissor" :
-                console.log("You won! rock beats cissor!");
-                
-
-                break;
-
-            case "paper" :
-                console.log("You lose! paper beats rock");
-                counter = 2;
-                break;
-            default : 
-                console.log("No winner!");
-                break;
-
-        }
-    
-    }
-    else if(playSelection == "paper") {
-        switch (computerSelection){
-            
-            case "cissor" :
-                console.log("You lose! cissor beats paper!");
-                counter = 2;
-                break;
-
-            case "rock" :
-                console.log("You won! paper beats rock");
-                counter = 1;
-                break;
-            default : 
-                console.log("No winner!");
-                break;
-
-        }
-        
-    }
-    else if(playSelection == "cissor"){
-
-        switch (computerSelection){
-            
-            case "rock" :
-                console.log("You lose! rock beats cissor!");
-                counter = 2;
-                break;
-
-            case "paper" :
-                console.log("You won! cissor beats paper");
-                counter = 1;
-                break;
-            default :
-                console.log("No winner!");
-                break;
-
-        }
-    }
-
-
-}
-
 /**
  * Code for the rock image
  */
@@ -105,21 +39,36 @@ let cissor = document.querySelector("#cissorImage");
 
 
 /**
- * Function will tracking result of both players
+ * Function to display button to play back
  */
 
- function checkResult() {
-    let imageToSelect = document.querySelector("#imageToSelect");
-    if(userResult == 5 || computerResult ==5) {
-        imageToSelect.style.display = "none";
+function showButton() {
+    let divButton = document.querySelector("#button");
+    let button = document.createElement('button');
+    divButton.appendChild(button);
+    button.textContent = "Play again";
+    button.setAttribute("id", "play");
 
-        if(userResult > computerResult){
-            document.querySelector("#title").innerHTML = "Congratulations!!! You beat me!";
-        }
-        else
-            document.querySelector("#title").innerHTML = "Sorry! You lose! I beat you";
+    button.addEventListener("click", function() {
+        imageToSelect.style.display = "flex";
+        button.style.display = "none";
+        userResult = 0;
+        computerResult = 0;
+        userScore.innerHTML = "0";
+        computerScore.innerHTML = "0";
+        document.querySelector("#title").innerHTML = "Great! Let's go to another party";
+        document.querySelector("h2").innerHTML = "Choose";
+        
+    });
+} 
+
+/**
+ * Warning function
+ */
+
+    function warning() {
+        document.querySelector("#warning").innerHTML = "Party began!";
     }
-}
 
 /**
  * Code below is the event when image rock is clicked
@@ -129,7 +78,7 @@ let cissor = document.querySelector("#cissorImage");
     switch(computerSelection) {
         case "rock" :
             computerImageDisplayed.setAttribute("src", "images/rock.png");
-            
+            document.querySelector("#title").innerHTML = "No winner!";
             break;
 
         case "paper" :
@@ -142,13 +91,14 @@ let cissor = document.querySelector("#cissorImage");
             computerImageDisplayed.setAttribute("src", "images/cissor.png");
             userResult = userResult + 1;
             userScore.innerHTML = userResult;
-            document.querySelector("#title").innerHTML = "you won! rock break cissor";
+            document.querySelector("#title").innerHTML = "You won! rock break cissor";
             break;
     }
 
     userImageDisplayed.setAttribute("src", "images/rock.png");
 
     checkResult();
+    warning();
  
 });
 
@@ -172,6 +122,7 @@ let cissor = document.querySelector("#cissorImage");
             
             case "paper" :
                 computerImageDisplayed.setAttribute("src", "images/paper.png");
+                document.querySelector("#title").innerHTML = "No winner!";
                 break;
             case "cissor" :
                 computerImageDisplayed.setAttribute("src", "images/cissor.png");
@@ -184,6 +135,7 @@ let cissor = document.querySelector("#cissorImage");
         userImageDisplayed.setAttribute("src", "images/paper.png");
         
         checkResult();
+        warning();
     });
 
 /**
@@ -211,10 +163,37 @@ let cissor = document.querySelector("#cissorImage");
                 break;
             case "cissor" :
                 computerImageDisplayed.setAttribute("src", "images/cissor.png");
+                document.querySelector("#title").innerHTML = "No winner!";
                 break;
         }
 
         userImageDisplayed.setAttribute("src", "images/cissor.png");
 
         checkResult();
+        warning();
     });
+
+    /**
+ * Function will tracking result of both players
+ */
+
+ function checkResult() {
+    let imageToSelect = document.querySelector("#imageToSelect");
+    
+    if(userResult == 5 || computerResult ==5) {
+        imageToSelect.style.display = "none";
+        document.querySelector("#warning").innerHTML = "Game over";
+        if(userResult > computerResult){
+            document.querySelector("#title").innerHTML = "Congratulations!!! You beat me!";
+            document.querySelector("h2").innerHTML = "Clik on the button below to another party";
+            
+            showButton();
+        }
+        else{
+            document.querySelector("#title").innerHTML = "Sorry! You lose! I beat you";
+            document.querySelector("h2").innerHTML = "Clik on the button below to another party";
+            document.querySelector("#warning").innerHTML = "Game over";
+            showButton();
+        }
+    }
+}

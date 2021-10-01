@@ -7,6 +7,11 @@
     border-radius: 10px;
     background-color: #3c3c58;
     color: white;
+    height: 630px;
+}
+
+h1 {
+    text-align: center;
 }
 /**
 ** CSS for Score tag
@@ -14,7 +19,8 @@
 
 #score {
     display: flex;
-    border: 1px solid;
+    text-align: center;
+   
 }
 
 #versus {
@@ -22,43 +28,55 @@
     margin-top: 5%;
 }
 #computerScore, #userScore {
-    border: 1px solid;
+    border: none;
+    border-radius: 5px;
     width: 15%;
     background-color: white;
     margin-left: 15%;
     height: 100px;
     color: black;
+    font-size: 45px;
+    line-height: 100px;
 }
 
 /**
 ** CSS for player name area
 **/
-#palyerName {
+#playerName {
     display: flex;
-    border: 1px solid;
-
+    width: 80%;
+    margin-left: 10%;
 }
 
-#computer, #userName {
-    width: 15%;
-    margin-left: 20%;
-    border: 1px solid;
+#computer{
+    width: 30%;
+    text-align: center;
+    padding: 1% 0% 1% 0%;
     
 }
+
+#userName {
+    width: 30%;
+    margin-left: 31%;
+    text-align: center;
+    padding: 1% 0% 1% 0%;
+}
+
 
 
 
 #images {
     display: flex;
     justify-content: space-around;
-    border: 5px solid;
-    width: 80%;
-    margin-left: 10%;
+    width: 90%;
+    margin-left: 2%;
 }
 
 #computerImageSelected, #userImageSelected {
-    border: 3px solid;
+
+   
 }
+
 /*
 **
 */
@@ -69,25 +87,51 @@ img {
     height: 100px;
 }
 figure {
-    border: 1px solid;
+    
     width: 70%;
    
 }
 
 #imageToSelect{
     display: flex;
-    border: 3px solid;
-    
+    border: 1px solid;
 }
 
 #rock, #paper, #cissor {
-    border: 1px solid;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
     margin-left: 7%;
 }
 
 figcaption {
-    border: 1px solid;
     text-align: center;
+    margin-left: 25%;
+}
+
+h2 {
+    text-align: center;
+}
+#play {
+    width: 20%;
+    height: 40px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    margin-left: 40%;
+    margin-bottom: 5%;
+
+}
+
+#play:hover {
+    background-color: #3882F6;
+    cursor: pointer;
+    color: white;
+    width: 22%;
+    height: 45px;
+    font-size: 21px;
+    font-weight: bold;
+    
 }
 
 @media screen and (max-width: 992px) {
