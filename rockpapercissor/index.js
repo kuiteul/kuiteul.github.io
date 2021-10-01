@@ -1,4 +1,3 @@
-
 let playSelection;
 let computerSelection;
 let computerResult = 0;
@@ -93,49 +92,129 @@ function playRound(playSelection, computerSelection) {
 
 }
 
-function game(userInput) {
+/**
+ * Code for the rock image
+ */
+let computerScore = document.querySelector("#computerScore");
+let userScore = document.querySelector("#userScore");
+let computerImageDisplayed = document.querySelector("#computerImageDisplayed");
+let userImageDisplayed = document.querySelector("#userImageDisplayed");
+let rock = document.querySelector("#rockImage");
+let paper = document.querySelector("#paperImage");
+let cissor = document.querySelector("#cissorImage");
 
-    do{
 
-       
+/**
+ * Function will tracking result of both players
+ */
 
-        userInput = userInput.toLowerCase();
+ function checkResult() {
+    let imageToSelect = document.querySelector("#imageToSelect");
+    if(userResult == 5 || computerResult ==5) {
+        imageToSelect.style.display = "none";
 
-        /*
-        ** We check if user entered the correct word that we ask to him
-        */
-
-        
-
-        playSelection = userInput;
-        computerSelection = computerPlay();
-
-        console.log(playRound(playSelection, computerSelection));
-
-        /*
-        ** the code below count the user and computer victory(ies)
-        **/
-
-        if(counter == 1){
-            userResult = userResult + 1;
-            counter = 0;
+        if(userResult > computerResult){
+            document.querySelector("#title").innerHTML = "Congratulations!!! You beat me!";
         }
-        else if(counter == 2){
-            computerResult = computerResult + 1;
-            counter = 0; 
-        }
-
-        if(userResult == 5 || computerResult == 5)
-        break;
-
-    }while(i==false);
-    
+        else
+            document.querySelector("#title").innerHTML = "Sorry! You lose! I beat you";
+    }
 }
 
-game();
+/**
+ * Code below is the event when image rock is clicked
+ */
+    rock.addEventListener("click", function() {
+    computerSelection = computerPlay();
+    switch(computerSelection) {
+        case "rock" :
+            computerImageDisplayed.setAttribute("src", "images/rock.png");
+            
+            break;
 
-if(userResult > computerResult) 
-    console.log("Congratulations! You won!");
+        case "paper" :
+            computerImageDisplayed.setAttribute("src", "images/paper.png");
+            computerResult = computerResult + 1;
+            computerScore.innerHTML = computerResult;
+            document.querySelector("#title").innerHTML = "You lose! paper wrap rock";
+            break;
+        case "cissor" :
+            computerImageDisplayed.setAttribute("src", "images/cissor.png");
+            userResult = userResult + 1;
+            userScore.innerHTML = userResult;
+            document.querySelector("#title").innerHTML = "you won! rock break cissor";
+            break;
+    }
 
-else 
-    console.log("Sorry! You lose! computer beats you ");
+    userImageDisplayed.setAttribute("src", "images/rock.png");
+
+    checkResult();
+ 
+});
+
+
+/**
+ * Code Below is the event when image paper is clicked
+ */
+
+    paper.addEventListener("click", function() {
+        
+        computerSelection = computerPlay();
+
+        switch(computerSelection) {
+
+            case "rock" :
+                computerImageDisplayed.setAttribute("src", "images/rock.png");
+                userResult = userResult + 1;
+                userScore.innerHTML = userResult;
+                document.querySelector("#title").innerHTML = "You won! paper wrap rock";
+                break;
+            
+            case "paper" :
+                computerImageDisplayed.setAttribute("src", "images/paper.png");
+                break;
+            case "cissor" :
+                computerImageDisplayed.setAttribute("src", "images/cissor.png");
+                computerResult = computerResult + 1;
+                computerScore.innerHTML = computerResult;
+                document.querySelector("#title").innerHTML = "You lose! cissor cut paper";
+                break;
+        }
+
+        userImageDisplayed.setAttribute("src", "images/paper.png");
+        
+        checkResult();
+    });
+
+/**
+ * Code Below is the event when image cissor is clicked
+ */
+
+    cissor.addEventListener("click", function() {
+        
+        computerSelection = computerPlay();
+
+        switch(computerSelection) {
+
+            case "rock" :
+                computerImageDisplayed.setAttribute("src", "images/rock.png");
+                computerResult = computerResult + 1;
+                computerScore.innerHTML = computerResult;
+                document.querySelector("#title").innerHTML = "You lose! rock break cissor";
+                break;
+            
+            case "paper" :
+                computerImageDisplayed.setAttribute("src", "images/paper.png");
+                userResult = userResult + 1;
+                userScore.innerHTML = userResult;
+                document.querySelector("#title").innerHTML = "You won! cissor cut paper";
+                break;
+            case "cissor" :
+                computerImageDisplayed.setAttribute("src", "images/cissor.png");
+                break;
+        }
+
+        userImageDisplayed.setAttribute("src", "images/cissor.png");
+
+        checkResult();
+    });

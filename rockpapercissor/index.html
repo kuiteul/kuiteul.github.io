@@ -8,7 +8,7 @@
 
     <body>
         <div class="container">
-            <h1>Welcome to Rock-Paper-Cissor Game</h1>
+            <h1 id="title">Welcome to Rock-Paper-Cissor Game</h1>
             <p>I believe I'm the master of this game.<br /> Otherwhise, Beat me if you can</p>
             <div id="score">
                 <div id="computerScore">
@@ -38,14 +38,14 @@
             <div id="images">
                 <div id="computerImageSelected">
                     <figure>
-                        <img src="#" alt="Computer result" />
+                        <img id="computerImageDisplayed" src="#" alt="Computer result" />
                     </figure>
                     <figcaption id="computerResult"></figcaption>
                 </div>
 
                 <div id="userImageSelected">
                     <figure>
-                        <img src="#" alt="User result" />
+                        <img id="userImageDisplayed" src="#" alt="User result" />
                     </figure>
                     <figcaption id="userResult"></figcaption>
                 </div>
@@ -54,10 +54,11 @@
             <h2>Choose</h2>
 
             <!-- The code below display image for rock paper cissor-->
+            <p id="winner"></p>
             <div id="imageToSelect">
                 <div id="rock">
                     <figure>
-                        <img src="images/rock.png" alt="Rock image" />
+                        <img id="rockImage" src="images/rock.png" alt="Rock image" />
                     </figure>
                     <figcaption>Rock</figcaption>
 
@@ -65,7 +66,7 @@
 
                 <div id="paper">
                     <figure>
-                        <img src="images/paper.png" alt="Paper image" />
+                        <img id="paperImage" src="images/paper.png" alt="Paper image" />
                     </figure>
                     <figcaption>Paper</figcaption>
 
@@ -73,7 +74,7 @@
 
                 <div id="cissor">
                     <figure>
-                        <img src="images/cissor.png" alt="Cissor image" />
+                        <img id="cissorImage" src="images/cissor.png" alt="Cissor image" />
                     </figure>
                     <figcaption>Cissor</figcaption>
                 </div>
