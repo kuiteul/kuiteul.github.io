@@ -27,7 +27,7 @@ function computerPlay() {
 }
 
 /**
- * Code for the rock image
+ * Declaration of variables
  */
 let computerScore = document.querySelector("#computerScore");
 let userScore = document.querySelector("#userScore");
@@ -49,6 +49,9 @@ function showButton() {
     button.textContent = "Play again";
     button.setAttribute("id", "play");
 
+    /**
+     * Event who will appear when user'll click
+     */
     button.addEventListener("click", function() {
         imageToSelect.style.display = "flex";
         button.style.display = "none";
@@ -57,6 +60,7 @@ function showButton() {
         userScore.innerHTML = "0";
         computerScore.innerHTML = "0";
         document.querySelector("#title").innerHTML = "Great! Let's go to another party";
+        warning();
         document.querySelector("h2").innerHTML = "Choose";
         
     });
@@ -67,7 +71,10 @@ function showButton() {
  */
 
     function warning() {
-        document.querySelector("#warning").innerHTML = "Party began!";
+        if(userResult == 5 || computerResult == 5)
+            document.querySelector("#warning").innerHTML = "Party is over";
+        else
+            document.querySelector("#warning").innerHTML = "Party began!";
     }
 
 /**
@@ -185,7 +192,7 @@ function showButton() {
         document.querySelector("#warning").innerHTML = "Game over";
         if(userResult > computerResult){
             document.querySelector("#title").innerHTML = "Congratulations!!! You beat me!";
-            document.querySelector("h2").innerHTML = "Clik on the button below to another party";
+            document.querySelector("h2").innerHTML = "Click on the button below to another party";
             
             showButton();
         }
