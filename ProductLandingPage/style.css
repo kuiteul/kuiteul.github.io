@@ -56,7 +56,7 @@ li {
 }
 
 .super-rectangle {
-    margin-bottom: 5%;
+    margin-bottom: 3%;
     margin-left: 0%;
     
 }
@@ -65,11 +65,22 @@ li {
     margin-top: 5%;
     position: relative;
     text-align: center;
-    max-width: 25% !important;
+    max-width: 24% !important;
 }
 
+.title {
+    margin-top: 4%;
+}
+.amount {
+    font-size: 26px;
+    font-weight: bold;
+}
 #rectangle-1 {
-    margin-left: 5%;
+    margin-left: 12%;
+}
+
+.last-rectangles {
+    margin-left: 3%;
 }
 
 
@@ -88,12 +99,17 @@ li {
     border-color: #FFA500;
     color: black;
     opacity: 100 !important;
+    
+}
+.select-tenor {
+    margin-top: -4%;
 }
 
 footer {
     position: absolute;
-    bottom: -15% !important;
+    bottom: 0% !important;
     background-color: #DDDDDD;
+    left: 12.5%;
 }
 
 footer a {
@@ -106,6 +122,7 @@ footer p {
     text-align: right;
     margin-right: 1.2%;
     margin-top: -0.5%;
+   
 }
 
 /**
