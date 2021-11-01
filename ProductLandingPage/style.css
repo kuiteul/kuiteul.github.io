@@ -1,0 +1,184 @@
+body {
+    background-color: #EEEEEE;
+    margin: 0% !important;
+}
+
+.container {
+   max-width: 100% !important;
+   padding: 0% !important;
+   margin: 0% !important;
+   
+}
+#header {
+   background-color: #EEEEEE;
+   margin-left: 0%;
+}
+
+#nav-bar, #header-logo {
+    margin-top: 2%;
+}
+
+#nav-bar a {
+    text-decoration: none;
+    color: black;
+}
+li {
+    font-size: 100%;
+    padding: 0% !important;
+    white-space: nowrap;
+}
+#after-header {
+     margin-top: 3%;
+}
+
+
+#email {
+    margin-top: -3%;
+}
+
+#div-submit {
+    margin-top: -3%;
+}
+.first-level {
+    
+    height: 550px;
+   
+  
+
+}
+
+.premium {
+    margin-top: 5%;
+}
+
+#video {
+    margin-top: 7%;
+}
+
+.super-rectangle {
+    margin-bottom: 5%;
+    margin-left: 0%;
+    
+}
+.price {
+    border: 1px solid;
+    margin-top: 5%;
+    position: relative;
+    text-align: center;
+    max-width: 25% !important;
+}
+
+#rectangle-1 {
+    margin-left: 5%;
+}
+
+
+.top-rectangle {
+    background-color: #DDDDDD;
+    position: absolute;
+    top: 0%;
+    right: 0%; 
+    left: 0%;
+    font-weight: bold;
+    
+}
+
+.select-tenor, #submit {
+    background-color: #FFA500;
+    border-color: #FFA500;
+    color: black;
+    opacity: 100 !important;
+}
+
+footer {
+    position: absolute;
+    bottom: -15% !important;
+    background-color: #DDDDDD;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer p {
+    font-size: 16px;
+    text-align: right;
+    margin-right: 1.2%;
+    margin-top: -0.5%;
+}
+
+/**
+* the code below belongs to mobile
+**/
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 100% !important;
+        border: 1px solid;
+        padding: 0% !important;
+    }
+    h4 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    h3 {
+        white-space: nowrap;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #div-submit {
+        margin-top: -7%;
+    }
+   
+
+    .icon {
+        display: none
+    }
+    .para-levl-one {
+        text-align: center;
+    }
+    .super-rectangle {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid;
+        margin-left: 8%;
+    }
+    .price {
+        max-width: 100% !important;
+    }
+
+    #rectangle-1, .last-rectangles {
+        margin-left: 1%;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+        right:0%;
+        max-width: 100%;
+    }
+
+    footer p {
+        font-size: 14px;
+        text-align: right;
+    }
+}
+
+@media (max-width: 768px){
+    #submit, .select-tenor {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    footer {
+        position: absolute;
+        left: 0%;
+        right: 0%;
+        bottom: -2%;
+    }
+    
+}
