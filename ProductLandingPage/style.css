@@ -160,7 +160,6 @@ footer p {
     .super-rectangle {
         display: flex;
         flex-direction: column;
-        border: 1px solid;
         margin-left: 8%;
     }
     .price {
@@ -185,15 +184,42 @@ footer p {
     }
 }
 
-@media (max-width: 768px){
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    
+  
+    #email {
+        max-width: 60% !important;
+        margin-left: 20%;
+    }
+    #div-submit {
+        max-width: 50% !important;
+        margin-left: 27.5% !important;
+    }
+
+    #submit {
+        width: 50% !important;
+        margin-left: 25% !important;
+    }
+
+    #select-tenor, #select-bass {
+        max-width: 70% !important;
+        margin-left: 15%;
+    }
     #submit, .select-tenor {
         font-size: 14px;
         text-align: center;
+        
     }
 
+    .price {
+        width: 50%;
+    }
+    #rectangle-1 {
+        margin-left: 12.5%;
+    }
     footer {
         position: absolute;
-        left: 0%;
+        left: 12.5%;
         right: 0%;
         bottom: -2%;
     }
