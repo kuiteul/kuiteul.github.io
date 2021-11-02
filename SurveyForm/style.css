@@ -1,0 +1,60 @@
+
+.container {
+    border: none;
+    max-width: 50% !important;
+    height: 650px;
+    position: absolute;
+    z-index: 1;
+    left: 25%;
+    background-color: white;
+    opacity: 5;
+}
+
+h1 {
+
+    width: 70%;
+    margin-left: 10%;
+    margin-top: 5%;
+    white-space: nowrap;
+}
+
+p{
+    font-size: 20px;
+    font-style: italic;
+}
+.container h1, .container p {
+    text-align: center;
+    color: white;
+}
+form{
+    max-width: 100% !important;
+    box-shadow: 5px 5px 5px 5px black;
+    padding: 5%;
+    border-radius: 5px;
+    color: white;
+    background-color: #282847;
+    opacity: 0.7;
+}
+
+#background-fixed {
+    width: 100%;
+    border: solid;
+    position: fixed;
+    z-index:-1;
+    height: inherit;
+    left: 0%;
+    background-image: url("https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg");
+}
+
+
+#background-color {
+    width: 100%;
+    border: solid;
+    position: fixed;
+    z-index:-1;
+    height: inherit;
+    left: 0%;
+    background-color: #6362EA;
+    opacity: 0.7;
+    
+}
