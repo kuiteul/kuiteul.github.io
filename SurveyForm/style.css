@@ -1,21 +1,23 @@
-
+body {
+    font-size: 18px;
+}
 .container {
     border: none;
-    max-width: 50% !important;
+    max-width: 55% !important;
     height: 100%;
     position: absolute;
     z-index: 1;
-    left: 25%;
+    left: 22.5%;
     background-color: white;
     opacity: 5;
 }
 
 h1 {
 
-    width: 70%;
+    width: 80%;
     margin-left: 10%;
     margin-top: 5%;
-    font-size: 26px;
+    font-size: 100%;
     
     white-space: nowrap;
 }
@@ -29,8 +31,10 @@ form p {
     text-align: left;
 }
 
-#form-check {
-    margin-right: 10%;
+#form-check, #form-check-2 {
+    margin-right: 35%;
+    width: 100%;
+    text-align: left;
 }
 .container h1, .container p {
     text-align: center;
@@ -38,50 +42,44 @@ form p {
 }
 form{
     max-width: 100% !important;
-    box-shadow: 5px 5px 5px 5px black;
+    
     padding: 5%;
     border-radius: 5px;
     color: white;
     background-color: #282847;
-    opacity: 0.7;
+    opacity: 0.9;
 }
 
 #background-fixed {
     width: 100%;
-    border: solid;
     position: fixed;
     z-index:-1;
     height: inherit;
     left: 0%;
     background-image: url("https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg");
+    background-repeat: no-repeat;
+    background-position-y: 20%;
+    background-position-x: 20%;
+    background-size: inherit;
 }
 
 
 #background-color {
     width: 100%;
-    border: solid;
     position: fixed;
     z-index:-1;
     height: inherit;
     left: 0%;
     background-color: #6362EA;
-    opacity: 0.9;
+    opacity: 0.5;
     
 }
 
 
 @media screen and (min-width: 320px) and (max-width: 576px){
     .container {
-        max-width: 80% !important;
-        border: 1px solid;
-        left: 10%;
-    }
-
-   ;
-
-    h1 {
-        font-size: 20px;
-        width: 80%;
+        max-width: 85% !important;
+        left: 7.5%;
     }
 
     p {
@@ -102,9 +100,6 @@ form{
         height: 100%;
     }
 
-    h1 {
-        font-size: 150%;
-    }
 
     p {
         font-size: 16px;
