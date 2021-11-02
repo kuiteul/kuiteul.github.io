@@ -184,7 +184,7 @@ footer p {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 680px) and (max-width: 992px) {
     
   
     #email {
@@ -222,6 +222,7 @@ footer p {
         left: 12.5%;
         right: 0%;
         bottom: -2%;
+        max-width: 75% !important;
     }
     
 }
