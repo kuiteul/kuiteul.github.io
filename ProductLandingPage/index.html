@@ -18,24 +18,24 @@
             <nav class="col-12 col-sm-5 offset-sm-3" id="nav-bar">
                 <ul class="nav justify-content-around">
                     <li class=" col-12 col-sm-4  text-center">
-                        <a class=" active" href="#">Features</a>
+                        <a class="nav-link active" href="#feature">Features</a>
                     </li>
                     <li class="col-12 col-sm-4 img-fluid text-center">
-                        <a class=""  href="#">How It Works</a>
+                        <a class="nav-link"  href="#how-it-work">How It Works</a>
                     </li>
                     <li class=" col-12 col-sm-4  text-center">
-                        <a class=" " href="#">Pricing</a>
+                        <a class="nav-link " href="#pricing">Pricing</a>
                     </li>
                 </ul>
             </nav>
         </header>
         
         <div class="col-12 col-sm-10 offset-sm-1"  id="after-header">
-            <h3 class="text-center"> Handcrafted, home-made masterpieces</h3>
-            <form class="col-12" action="https://www.freecodecamp.com/email-submit" method="">
+            <h3 class="text-center" id="feature"> Handcrafted, home-made masterpieces</h3>
+            <form class="col-12" action="https://www.freecodecamp.com/email-submit" method="" id="form">
                 <div class="form-group email col-10 col-sm-8 col-md-10 offset-sm-2 offset-md-1 offset-1">
                     <label for="email"></label>
-                    <input type="email" name="" id="email" 
+                    <input type="email" name="email" id="email" 
                     class="form-control col-8 col-sm-10 offset-sm-1 col-md-4 offset-md-4 offset-2" 
                         placeholder="Enter your email" aria-describedby="helpId">
                 </div>
@@ -110,14 +110,14 @@
             </div>
         </div>
             
-        <div class="col-12 col-sm-6 offset-sm-3">
+        <div class="col-12 col-sm-6 offset-sm-3" id="how-it-work">
             <iframe class="col-12" height="315px" id="video"  src="https://www.youtube.com/embed/y8Yv4pnO7qc" 
                 title="YouTube video player" frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                         allowfullscreen></iframe>
         </div>
 
-        <div class="row col-10 col-sm-12 super-rectangle">
+        <div class="row col-10 col-sm-12 super-rectangle" id="pricing">
 
             <div class="row align-content-around col-12 price" id="rectangle-1">
                 <div class="col-12 top-rectangle">
@@ -206,5 +206,6 @@
         </footer>
     </div>
   
- </body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" type="text/javascript"></script>
+</body>
 </html>
