@@ -2,7 +2,7 @@
 .container {
     border: none;
     max-width: 50% !important;
-    height: 650px;
+    height: 100%;
     position: absolute;
     z-index: 1;
     left: 25%;
@@ -15,12 +15,22 @@ h1 {
     width: 70%;
     margin-left: 10%;
     margin-top: 5%;
+    font-size: 26px;
+    
     white-space: nowrap;
 }
 
 p{
-    font-size: 20px;
+    font-size: 18px;
     font-style: italic;
+}
+
+form p {
+    text-align: left;
+}
+
+#form-check {
+    margin-right: 10%;
 }
 .container h1, .container p {
     text-align: center;
@@ -55,6 +65,50 @@ form{
     height: inherit;
     left: 0%;
     background-color: #6362EA;
-    opacity: 0.7;
+    opacity: 0.9;
     
 }
+
+
+@media screen and (min-width: 320px) and (max-width: 576px){
+    .container {
+        max-width: 80% !important;
+        border: 1px solid;
+        left: 10%;
+    }
+
+   ;
+
+    h1 {
+        font-size: 20px;
+        width: 80%;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    form {
+        max-width: 100% !important;
+       
+    }
+}
+
+@media  screen and (min-width: 577px) and (max-width: 992px) {
+    
+    .container {
+        max-width: 70% !important;
+        left: 15%;
+        height: 100%;
+    }
+
+    h1 {
+        font-size: 150%;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+  

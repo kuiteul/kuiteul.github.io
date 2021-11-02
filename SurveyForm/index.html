@@ -25,13 +25,13 @@
         <form action="" method="POST" id="survey-form">
             <div class="form-group">
               <label for="name" id="name-label">Name</label>
-              <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name">
+              <input type="text" required class="form-control" name="name" id="name" placeholder="Enter your name">
               
             </div>
 
             <div class="form-group">
               <label for="email" id="email-label">email</label>
-              <input type="email" class="form-control" name="email" id="email" 
+              <input type="email" class="form-control" required name="email" id="email" 
                 placeholder="Enter your email">
             </div>
 
@@ -53,8 +53,8 @@
               </select>
             </div>       
 
+            <p id="form-check">Would you recommend freeCodeCamp to a friend?</p>
             <div class="form-check">
-                Would you recommend freeCodeCamp to a friend?<br /><br />
                 <label class="form-check-label">
                 <input type="radio" class="form-check-input" name="checked" id="definitely" value="definitely" checked>
                 definitely
@@ -69,7 +69,7 @@
                 <input type="radio" class="form-check-input" name="checked" id="not_sure" value="not sure" >
                 Not sure
               </label>
-            </div>  
+            </div>  <br />
 
             <div class="form-group">
               <label for="dropdown_two">What is your favorite feature of freeCodeCamp? </label>
@@ -93,7 +93,7 @@
               <label class="form-check-label">
                 <input type="checkbox" class="form-check-input" name="back-end" id="back-end" value="back-end">
                 Back-end Projects
-              </label><br />
+              </label><br /><br />
 
               <label class="form-check-label">
                 <input type="checkbox" class="form-check-input" name="Data-viz" id="Data-viz" value="Data-viz">
