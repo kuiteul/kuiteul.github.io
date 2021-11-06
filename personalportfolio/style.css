@@ -353,7 +353,36 @@ footer p:nth-child(2) {
     }
 
     footer p:nth-child(2) {
-        margin-left: 5%;
+        margin-left: 15%;
         padding-top: 2%;
     }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    
+    #navbar a {
+        font-size: 16px;
+    }
+
+    header ul li:nth-child(1) {
+        margin: 0%;
+    }
+
+    #contacts .nav-item {
+        margin-left: 3%;
+    }
+
+    footer {
+        height: 150px;
+    }
+    footer p:nth-child(1) {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    footer p:nth-child(2) {
+        margin-left: 62%;
+        
+    }
+
 }
