@@ -3,6 +3,8 @@
 */
 body{
     margin: 0%;
+    width: 100%;
+    height: 100%;
 }
 /* This is the block container directly below my body.
 *-Notice: I didn't put display: flex because bootstrap is used here and has already defined 
@@ -70,7 +72,9 @@ header a, header a:hover {
 */
 
 #welcome-section {
-    height: 580px;
+    height: 100vh;
+    width: 100%;
+    top: 0;
     text-align: center;
     background-color: #303234;
     color: white;
@@ -270,7 +274,7 @@ footer p:nth-child(2) {
     * Welcome-section begin here 
     */
     #welcome-section {
-        height: 350px;
+        height: 100vh;
     }
     #personal-image {
         width: 85%;
@@ -352,6 +356,10 @@ footer p:nth-child(2) {
     
     #navbar a {
         font-size: 16px;
+    }
+
+    #welcome-section{
+        height: 100vh;
     }
 
     #contacts .nav-item {
