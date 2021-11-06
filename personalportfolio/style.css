@@ -72,10 +72,13 @@ header a, header a:hover {
 */
 
 #welcome-section {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     width: 100%;
-    top: 0;
-    text-align: center;
     background-color: #303234;
     color: white;
     margin-top: -0.5%;
@@ -83,12 +86,13 @@ header a, header a:hover {
  
 #welcome-section div {
     width: 50%;
-    margin-left: 25%;
+    display: flex;
+    justify-content: center;
 }
 
 #personal-image {
-    width: 45%;
-    height: 20em;
+    width: 40%;
+    height: 15em;
     border-radius: 50%;
     margin-top: 5%;
 }
@@ -96,6 +100,7 @@ h1 {
     
     font-weight: bold;
     padding-top: 3%;
+    text-align: center;
 }
 
 #welcome-section p {
@@ -273,8 +278,8 @@ footer p:nth-child(2) {
     /*
     * Welcome-section begin here 
     */
-    #welcome-section {
-        height: 100vh;
+    #welcome-section div {
+        padding-top: 5%;
     }
     #personal-image {
         width: 85%;
@@ -289,6 +294,11 @@ footer p:nth-child(2) {
         font-size: 26px;
     }
     
+    #welcome-section {
+        height: 100vh;
+
+    }
+
     #welcome-section p {
         color: #BE3144;
         font-size: 20px;
@@ -356,10 +366,6 @@ footer p:nth-child(2) {
     
     #navbar a {
         font-size: 16px;
-    }
-
-    #welcome-section{
-        height: 100vh;
     }
 
     #contacts .nav-item {
