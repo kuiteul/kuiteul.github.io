@@ -59,10 +59,6 @@ header ul li:hover {
     transition-duration: 0.5s;
 }
 
-header ul li:nth-child(1) {
-    margin-left: 25%;
-}
-
 header a, header a:hover {
     color: white;
     font-size: 22px;
@@ -252,7 +248,7 @@ footer p:nth-child(2) {
 * Here begin the responsive design code
 */
 
-@media screen and (min-width: 320px) and (max-width: 576px) {
+@media screen and (min-width: 320px) and (max-width: 681px) {
     #navbar {
         display: flex;
         justify-content: center !important;
@@ -266,9 +262,7 @@ footer p:nth-child(2) {
         background-color: #45567D;
         border: #45567D;
     }
-    header ul li:nth-child(1) {
-        margin-left: 0%;
-    }
+ 
     #navbar a {
         font-size: 16px;
     }
@@ -326,10 +320,6 @@ footer p:nth-child(2) {
         font-size: 16px;
     }
 
-    #icon-contact {
-
-    }
-
     #contacts .nav-item {
         margin-left: 5%;
     }
@@ -358,14 +348,10 @@ footer p:nth-child(2) {
     }
 }
 
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 682px) and (max-width: 992px) {
     
     #navbar a {
         font-size: 16px;
-    }
-
-    header ul li:nth-child(1) {
-        margin: 0%;
     }
 
     #contacts .nav-item {
