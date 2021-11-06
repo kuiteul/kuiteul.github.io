@@ -1,6 +1,13 @@
+/*
+* I set all body margin to 0 to remove every space
+*/
 body{
     margin: 0%;
 }
+/* This is the block container directly below my body.
+*-Notice: I didn't put display: flex because bootstrap is used here and has already defined 
+* flex property 
+*/
 .container {
     margin: 0% !important;
     border: 1px solid;
@@ -8,12 +15,15 @@ body{
     padding: 0% !important;
     background-color: #BE3144;
 }
-
+/*
+* Below is the css about header and all is containt
+*/
 header {
   
     max-width: inherit !important;
     position: relative;
     height: 70px;
+    
 }
 
 #navbar {
@@ -24,24 +34,29 @@ header {
     right: 0%;
     height: inherit !important;
     background-color: #BE3144;
+    display: flex;
+    justify-content: flex-end;
 }
 
 header ul {
-   
-    width: 40%;
-    margin-left: 60%;
+  
     height: inherit !important;
+    width: 40%;
 }
 
 
 header ul li {
    
     padding: 1.5%;
+    transition-duration: 0.5s;
+    background-color: #BE3144;
+    border: #BE3144;
 }
 
 header ul li:hover {
     background-color: #45567D;
     border: #45567D;
+    transition-duration: 0.5s;
 }
 
 header ul li:nth-child(1) {
@@ -54,6 +69,9 @@ header a, header a:hover {
     text-decoration: none;
 }
 
+/*
+* Below is the CSS code for the welcome-section who follow straight the header
+*/
 
 #welcome-section {
     height: 580px;
@@ -86,6 +104,9 @@ h1 {
     font-style: italic;
 }
 
+/*
+* The CSS code below belong to the project section and all it contents
+*/
 #projects {
     height: auto;
     padding: 1%;
@@ -144,6 +165,9 @@ figcaption {
     margin-top: 2% !important;
 }
 
+/*
+* The block contact CSS code begin here
+*/
 #contacts {
     width: 100%;
     height: 400px;
@@ -174,17 +198,20 @@ figcaption {
     padding: 0% !important;
 }
 
-#contacts .nav-item:hover {
-    padding-top: 1% !important;
-    transform-origin: top;
-    transition-timing-function: ease-in-out;
+#contacts .nav-item{
+    
     transition-duration: 0.5s;
+    padding-bottom: 1%;
+}
 
+#contacts .nav-item:hover{
+    transition: ease-out 0.5s;
+    padding-top: 1% !important;
 }
 
 #contacts .nav-link img {
     width: 20%;
-
+    display: block;
 }
 
 #icon-contact {
@@ -198,6 +225,10 @@ figcaption {
     font-size: 26px;
     white-space: nowrap;
 }
+
+/*
+* The footer CSS code is there
+*/
 
 footer {
     width: 100%;
@@ -215,4 +246,143 @@ footer p:nth-child(1) {
 
 footer p:nth-child(2) {
     margin-left: 70%;
+}
+
+/*
+* Here begin the responsive design code
+*/
+
+@media screen and (min-width: 320px) and (max-width: 576px) {
+    #navbar {
+        display: flex;
+        justify-content: center !important;
+    }
+
+    #navbar ul {
+        width: 100%;   
+    }
+
+    header ul li:active {
+        background-color: #45567D;
+        border: #45567D;
+    }
+    header ul li:nth-child(1) {
+        margin-left: 0%;
+    }
+    #navbar a {
+        font-size: 16px;
+    }
+    /*
+    * Welcome-section begin here 
+    */
+    #welcome-section {
+        height: 350px;
+    }
+    #personal-image {
+        width: 85%;
+        height: 12em;
+        border-radius: 50%;
+        margin-top: 5%;
+    }
+
+    h1 {
+    
+        font-weight: bold;
+        font-size: 26px;
+    }
+    
+    #welcome-section p {
+        color: #BE3144;
+        font-size: 20px;
+        font-style: italic;
+    }
+
+    /*
+    * Project-section begin here
+    */
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .project-tile {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    /*
+    * Contact section begins here
+    */
+
+    #contacts {
+        height: 200px;
+    }
+    #contacts #title-contact{
+        font-size: 26px;
+        padding-top: 5%;
+    }
+
+    #contacts #invitation {
+        font-size: 16px;
+    }
+
+    #icon-contact {
+
+    }
+
+    #contacts .nav-item {
+        margin-left: 5%;
+    }
+
+    #contacts a {
+        font-size: 10px;
+        padding: 3%;
+    }
+
+    /*
+    * Here begin the footer
+    */
+
+    footer{
+        height: 50px;
+        margin-bottom: 0%;
+    }
+
+    footer p:nth-child(1) {
+        display: none;
+    }
+
+    footer p:nth-child(2) {
+        margin-left: 15%;
+        padding-top: 2%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    
+    #navbar a {
+        font-size: 16px;
+    }
+
+    header ul li:nth-child(1) {
+        margin: 0%;
+    }
+
+    #contacts .nav-item {
+        margin-left: 3%;
+    }
+
+    footer {
+        height: 150px;
+    }
+    footer p:nth-child(1) {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    footer p:nth-child(2) {
+        margin-left: 62%;
+        
+    }
+
 }
