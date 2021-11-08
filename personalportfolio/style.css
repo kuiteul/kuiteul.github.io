@@ -287,7 +287,6 @@ footer p:nth-child(2) {
     */
     #welcome-section div {
         padding-top: 1% !important;
-        border: 1px solid;
         margin-top: 0% !important;
     }
     #personal-image {
@@ -379,6 +378,10 @@ footer p:nth-child(2) {
 
 @media screen and (min-width: 682px) and (max-width: 992px) {
     
+    #welcome-section p {
+        padding-bottom: 2%;
+    }
+    
     #navbar a {
         font-size: 16px;
     }
@@ -396,7 +399,12 @@ footer p:nth-child(2) {
     
 
     #contacts .nav-item {
-        margin-left: 3%;
+        margin-left: 2%;
+       
+    }
+
+    #contacts a {
+        font-size: 18px;
     }
 
     footer {
