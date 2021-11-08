@@ -286,29 +286,31 @@ footer p:nth-child(2) {
     * Welcome-section begin here 
     */
     #welcome-section div {
-        padding-top: 5%;
+        padding-top: 1% !important;
+        border: 1px solid;
+        margin-top: 0% !important;
     }
     #personal-image {
-        width: 85%;
-        height: 12em;
+        width: 80%;
+        height: 10em;
         border-radius: 50%;
-        margin-top: 5%;
+        margin-top: 1%;
     }
 
     h1 {
     
         font-weight: bold;
-        font-size: 22px;
+        font-size: 18px;
     }
     
     #welcome-section {
-        height: 105vh;
+        height: 100vh;
 
     }
 
     #welcome-section p {
         color: #BE3144;
-        font-size: 20px;
+        font-size: 14px;
         font-style: italic;
     }
 
