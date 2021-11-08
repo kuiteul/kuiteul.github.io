@@ -337,6 +337,11 @@ footer p:nth-child(2) {
         padding-top: 5%;
     }
 
+    .project-tile:nth-child(6) img {
+        margin-left: 0%;
+    }
+    
+
     #contacts #invitation {
         font-size: 16px;
     }
@@ -364,8 +369,9 @@ footer p:nth-child(2) {
     }
 
     footer p:nth-child(2) {
-        margin-left: 15%;
-        padding-top: 2%;
+        margin-left: 12%;
+        padding-top: 3%;
+        font-size: 12px;
     }
 }
 
@@ -374,6 +380,18 @@ footer p:nth-child(2) {
     #navbar a {
         font-size: 16px;
     }
+
+
+    .project-tile {
+        width: 45%;
+        margin: 2.5%;
+    
+    }
+
+    .project-tile:nth-child(6) img {
+        margin-left: 0%;
+    }
+    
 
     #contacts .nav-item {
         margin-left: 3%;
@@ -388,7 +406,7 @@ footer p:nth-child(2) {
     }
 
     footer p:nth-child(2) {
-        margin-left: 62%;
+        margin-left: 60%;
         
     }
 
