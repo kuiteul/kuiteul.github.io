@@ -110,6 +110,7 @@ footer {
     bottom: 0% !important;
     background-color: #DDDDDD;
     left: 12.5%;
+    height: 7em;
 }
 
 footer a {
@@ -199,7 +200,6 @@ footer p {
 
 @media screen and (min-width: 600px) and (max-width: 992px) {
     
-  
     #email {
         max-width: 60% !important;
         margin-left: 20%;
