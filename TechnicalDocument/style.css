@@ -20,6 +20,8 @@ body {
 header {
     font-size: 24px;
     margin: 2%;
+    text-align: center;
+    white-space: nowrap;
 }
 
 #navbar {
@@ -80,16 +82,16 @@ code p {
     #head {
         width: 100% !important;
         text-align: center;
-        position: -webkit-sticky;
-        position: sticky;
+        position: fixed;
         top: 0%;
         z-index: 1;
         background-color: white;
-       
+        border-right: none;
+        padding-bottom: 0%;       
     }
 
     main {
-        
+         
         top: 40%;
         left: 3%;
         right: 3%;
