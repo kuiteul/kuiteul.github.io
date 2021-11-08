@@ -190,7 +190,6 @@ main {
 
 .square {
     width: 20%;
-
     height: 250px;
 }
 
@@ -288,9 +287,9 @@ figure img {
     margin-top: -2%;
 }
 
-#sign button {
+#sign-bottom button {
     
-    width: 65%;
+    width: 100%;
     border: 2px solid;
     border-radius: 5px;
     background-color: #3882F6;
@@ -493,7 +492,7 @@ footer p {
     }
 
     #sign-bottom button {
-        width: 100%;
+        width: 98%;
         border: 2px solid;
         border-radius: 5px;
         background-color: #3882F6;
@@ -513,8 +512,189 @@ footer p {
 
     footer p {
         padding-top: 2%;
-        text-align: center;
-    
+        text-align: right;
+
+    }
 
 }
 
+@media screen and (min-width: 561px) and (max-width: 768px) {
+
+    .page-top {
+        height: 170vh !important;
+        margin: 0%;
+    }
+    #logo {
+        margin-left: 5%;
+    }
+
+    #logo img {
+        width: 100%;
+        margin-left: 0%;
+       
+    }
+    header #nav-bar {
+        
+        height: inherit;
+        width: 65%;
+        
+    }
+
+    #nav-bar ul {
+        display: flex;
+        margin-left: 5%;
+        height: inherit;
+        margin-top: 0%;
+        padding: 0%;
+    }
+
+    #nav-bar ul li {
+        width: 35%;
+        margin-left: 4% !important;
+        font-size: 18px;
+        margin-top: 10%;
+    }
+
+
+    #nav-bar li:nth-child(1) {
+        margin-left: 0% !important;
+    }
+
+    #sub-header {
+        display: flex;
+        flex-direction: column;
+        margin-top: -5%;
+    }
+    #sub-header-left{
+        width: 90%;
+        margin-left: 5%;
+        height: auto;
+        order: 2;
+        margin-top: 1%;
+    }
+
+    #sub-header-right {
+        width: 100% !important;
+        margin-left: 0% !important;
+        height: 15em;
+        order: 1;
+        margin-top: 35% !important;
+    }
+
+    #sub-header-right img {
+        height: 15em;
+        margin-top: 0%;
+    }
+
+    h1 {
+        font-size: 30px;
+       
+    }
+    
+    p{
+        text-align: justify;
+        margin-top: 0% !important;
+        margin-bottom: 0%;
+        font-size: 12px;
+    }
+
+    #sign {
+
+        margin-top: 2% !important;
+        width: 50% !important;
+        margin-left: 25% !important;
+    }
+
+    .first-level p {
+        font-size: 22px;
+        margin-top: 10% !important;
+        margin-bottom: 5% !important;
+    }
+
+    .first-level {
+        width: 100% !important;
+        margin-left: 0% !important;
+        height: auto;
+        padding-bottom: 5%;
+    }
+    #squares {
+        width: 100% !important;
+    }
+
+    figcaption {
+        font-size: 12px;
+    }
+
+    .second-level {
+        height: auto;
+        padding-top: 5%;
+    }
+
+    blockquote  p {
+        font-size: 22px;
+    }
+
+    #cite {
+        margin-top: 5%;
+        margin-left: 30% !important;
+  
+    }
+
+    .third-level {
+        height: 15em;
+    }
+
+    #sign-bottom button {
+        width: 100%;
+        border: 2px solid;
+        border-radius: 5px;
+        background-color: #3882F6;
+        border-color: white;
+        color: white;
+        height: 35px;
+        margin-top: 50%;
+        margin-left: 30%;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-right: 3% !important;
+    }
+
+    footer {
+        height: 4em;
+    }
+
+    footer p {
+        padding-top: 5%;
+        text-align: right;
+    }
+
+}
+
+@media  screen and (min-width: 769px) and (max-width: 992px) {
+    
+   #sub-header h1 {
+       font-size: 26px !important;
+   }
+
+   #sub-header-left button{
+        margin-top: 5%;
+        width: 60%;
+        margin-left: 20%;
+   }
+
+   .first-level {
+       width: 100%;
+       margin-left: 0%;
+   }
+
+   blockquote {
+       width: 90% !important;
+       margin-left: 5% !important;
+   }
+
+   footer {
+       height: 5em !important;
+   }
+
+}
