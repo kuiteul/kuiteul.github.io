@@ -122,8 +122,9 @@ h1 {
 }
 
 #block-projects {
-    width: 100%;
-    margin: 0%;
+    width: 90%;
+    margin-left: 7%;
+    padding: 0%;
 }
 
 #block-projects span {
@@ -162,9 +163,6 @@ h2 {
 
 }
 
-.project-tile:nth-child(6) img {
-    margin-left: 2%;
-}
 
 figure {
     color: white;
