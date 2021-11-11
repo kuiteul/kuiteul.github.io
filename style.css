@@ -3,6 +3,8 @@
 */
 body{
     margin: 0%;
+    width: 100%;
+    height: 100%;
 }
 /* This is the block container directly below my body.
 *-Notice: I didn't put display: flex because bootstrap is used here and has already defined 
@@ -70,8 +72,13 @@ header a, header a:hover {
 */
 
 #welcome-section {
-    height: 580px;
-    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
     background-color: #303234;
     color: white;
     margin-top: -0.5%;
@@ -79,12 +86,13 @@ header a, header a:hover {
  
 #welcome-section div {
     width: 50%;
-    margin-left: 25%;
+    display: flex;
+    justify-content: center;
 }
 
 #personal-image {
-    width: 45%;
-    height: 20em;
+    width: 40%;
+    height: 15em;
     border-radius: 50%;
     margin-top: 5%;
 }
@@ -92,6 +100,7 @@ h1 {
     
     font-weight: bold;
     padding-top: 3%;
+    text-align: center;
 }
 
 #welcome-section p {
@@ -113,8 +122,9 @@ h1 {
 }
 
 #block-projects {
-    width: 100%;
-    padding-left: 13%;
+    width: 90%;
+    margin-left: 7%;
+    padding: 0%;
 }
 
 #block-projects span {
@@ -130,8 +140,8 @@ h2 {
    
 }
 .project-tile {
-    width: 40%;
-    margin: 2%;
+    width: 30%;
+    margin: 1%;
     height: auto;
     background-color: #303841;
 }
@@ -146,9 +156,13 @@ h2 {
     text-decoration: none;
 }
 .project-tile img {
-    width: inherit;
+    width: 100%;
     height: 350px;
+    display: block;
+    margin: 0%;
+
 }
+
 
 figure {
     color: white;
@@ -248,7 +262,7 @@ footer p:nth-child(2) {
 * Here begin the responsive design code
 */
 
-@media screen and (min-width: 320px) and (max-width: 681px) {
+@media screen and (min-width: 320px) and (max-width: 666px) {
     #navbar {
         display: flex;
         justify-content: center !important;
@@ -269,25 +283,31 @@ footer p:nth-child(2) {
     /*
     * Welcome-section begin here 
     */
-    #welcome-section {
-        height: 350px;
+    #welcome-section div {
+        padding-top: 1% !important;
+        margin-top: 0% !important;
     }
     #personal-image {
-        width: 85%;
-        height: 12em;
+        width: 80%;
+        height: 10em;
         border-radius: 50%;
-        margin-top: 5%;
+        margin-top: 1%;
     }
 
     h1 {
     
         font-weight: bold;
-        font-size: 26px;
+        font-size: 18px;
     }
     
+    #welcome-section {
+        height: 100vh;
+
+    }
+
     #welcome-section p {
         color: #BE3144;
-        font-size: 20px;
+        font-size: 14px;
         font-style: italic;
     }
 
@@ -300,8 +320,9 @@ footer p:nth-child(2) {
     }
 
     .project-tile {
-        width: 90%;
-        margin-left: 5%;
+        width: 80%;
+        margin-left: 10%;
+       
     }
 
     /*
@@ -315,6 +336,11 @@ footer p:nth-child(2) {
         font-size: 26px;
         padding-top: 5%;
     }
+
+    .project-tile:nth-child(6) img {
+        margin-left: 0%;
+    }
+    
 
     #contacts #invitation {
         font-size: 16px;
@@ -343,19 +369,44 @@ footer p:nth-child(2) {
     }
 
     footer p:nth-child(2) {
-        margin-left: 15%;
-        padding-top: 2%;
+        margin-left: 12%;
+        padding-top: 3%;
+        font-size: 12px;
     }
 }
 
-@media screen and (min-width: 682px) and (max-width: 992px) {
+@media screen and (min-width: 667px) and (max-width: 992px) {
+    
+    #welcome-section p {
+        padding-bottom: 2%;
+    }
     
     #navbar a {
-        font-size: 16px;
+        font-size: 14px;
     }
 
+    #block-projects {
+        padding: 0% !important;
+
+    }
+    .project-tile {
+        width: 40%;
+        margin-left: 6%;
+    
+    }
+
+    .project-tile:nth-child(6) img {
+        margin-left: 0%;
+    }
+    
+
     #contacts .nav-item {
-        margin-left: 3%;
+        margin-left: 2%;
+       
+    }
+
+    #contacts a {
+        font-size: 18px;
     }
 
     footer {
@@ -367,7 +418,7 @@ footer p:nth-child(2) {
     }
 
     footer p:nth-child(2) {
-        margin-left: 62%;
+        margin-left: 20%;
         
     }
 
