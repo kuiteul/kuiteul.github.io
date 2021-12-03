@@ -166,7 +166,7 @@ function showButton() {
                 computerImageDisplayed.setAttribute("src", "images/paper.png");
                 userResult = userResult + 1;
                 userScore.innerHTML = userResult;
-                document.querySelector("#title").innerHTML = "You won! cissor cut paper";
+                document.querySelector("#title").innerHTML = "You won! scissor cut paper";
                 break;
             case "cissor" :
                 computerImageDisplayed.setAttribute("src", "images/cissor.png");
