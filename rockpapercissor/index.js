@@ -98,7 +98,7 @@ function showButton() {
             computerImageDisplayed.setAttribute("src", "images/cissor.png");
             userResult = userResult + 1;
             userScore.innerHTML = userResult;
-            document.querySelector("#title").innerHTML = "You won! rock break cissor";
+            document.querySelector("#title").innerHTML = "You won! rock break scissor";
             break;
     }
 
@@ -135,7 +135,7 @@ function showButton() {
                 computerImageDisplayed.setAttribute("src", "images/cissor.png");
                 computerResult = computerResult + 1;
                 computerScore.innerHTML = computerResult;
-                document.querySelector("#title").innerHTML = "You lose! cissor cut paper";
+                document.querySelector("#title").innerHTML = "You lose! scissor cut paper";
                 break;
         }
 
@@ -159,7 +159,7 @@ function showButton() {
                 computerImageDisplayed.setAttribute("src", "images/rock.png");
                 computerResult = computerResult + 1;
                 computerScore.innerHTML = computerResult;
-                document.querySelector("#title").innerHTML = "You lose! rock break cissor";
+                document.querySelector("#title").innerHTML = "You lose! rock break scissor";
                 break;
             
             case "paper" :
