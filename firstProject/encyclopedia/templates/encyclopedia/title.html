@@ -1,0 +1,20 @@
+{% extends 'encyclopedia/layout.html' %}
+
+{% block title %}
+    Looking for-{{title_entry}}
+{% endblock title %}
+
+{% block body %}
+    <h2>Result for "{{title_entry}}"</h2>
+    {% if title_found == None %}
+        No result has been found for "{{title_entry}}"
+    {% else %}
+         <p>
+           {{title_found}}<br /><br />
+                
+                <a href="edit/{{title_entry}}" />Edit this content</a>
+        </p>
+    {% endif %}
+   
+
+{% endblock body %}
