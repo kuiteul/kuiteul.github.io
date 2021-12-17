@@ -1,0 +1,16 @@
+{% extends 'sale/layout.html' %}
+
+{% block title %}title {{custom.id}}{% endblock title %}
+
+{% block body %}
+
+    <form action="#" method="POST" >
+        <h2>All clients within my database</h2>
+        <ul>
+            {% for custom in customer %}
+            
+                <li>{{custom}} <a href="{% url 'customer' custom.id %}"> Click for details</a></li>
+                <br />
+            {% endfor %}
+        </ul>
+{% endblock body %}

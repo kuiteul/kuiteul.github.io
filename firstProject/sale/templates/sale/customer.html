@@ -1,0 +1,42 @@
+{% extends 'sale/layout.html' %}
+
+{% block title %}Customer - {{customer_i.id}} {% endblock title %}
+
+{% block body %}
+    <h2>Information sur le client {{customer_i.id}}</h2>
+
+    <ul>
+        <li>Name: {{customer_i.name}}</li>
+        <br />
+        <li>City: {{customer_i.city}}</li>
+        <br />
+        <li>Age: {{customer_i.age}}</li>
+    </ul>
+
+    <h2>Client orders</h2>
+        <p>Order's number: {{number}} 
+           
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>Amount</th>
+            </tr>
+            {% for order in order %}
+                <tr>
+                    <td>{{order.name}}</td>
+                    <td>{{order.amount}} XAF</td>
+                </tr>
+                <tr>
+                    
+       
+                {% empty %}
+                    </table>
+                    <ul>
+                        <li>No order by this client yet</li>
+                    </ul>
+            {% endfor %}
+            <td>Total purchase</td>
+            <td>{{sum}}</td>
+        </table>
+
+{% endblock body %}

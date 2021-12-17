@@ -1,0 +1,9 @@
+{% extends 'minichat/layout.html' %}
+
+{% block title %}Home - Page{% endblock title %}
+
+{% block body %}
+    <h1>Bienvenu dans la page de chat</h1>
+    <p><a href='{% url 'minichat:chat' %}'>Let chat</a>
+
+{% endblock body %}

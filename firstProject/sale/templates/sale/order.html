@@ -1,0 +1,32 @@
+{% extends 'sale/layout.html' %}
+
+{% block title %}List of orders{% endblock title %}
+
+{% block body %}
+    <h2>Make an order</h2>
+    <form action="{% url 'purchase' %}" method="POST" name="form">
+        {% csrf_token %}
+        <fieldset>
+            <legend>Fill informations order</legend>
+            <label for="customer_name">Customer name:</label>
+            <select name="customer_name">
+                {% for customer in customers %}
+                    <option value={{customer.id}}> {{customer.name}} </option>
+                {% endfor %}
+            </select>
+            <br /><br />
+            <label for="order_name">Order name:</label>
+            <select name="customer_name">
+                {% for order in orders %}
+                    <option value={{order.name}}> {{order.name}} </option>
+
+                {% endfor %}
+            </select>
+            <br /><br />
+            <label for="amount">Amount:</label>
+            <input type="number" placeholder="Enter the amount" name="amount" id="amount" />
+            <br /><br />
+            <input type="submit" value="Make order" name="order" />
+        </fieldset>
+    </form>
+{% endblock body %}

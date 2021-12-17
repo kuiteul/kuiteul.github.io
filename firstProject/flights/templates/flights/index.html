@@ -1,0 +1,13 @@
+{% extends 'flights/layout.html' %}
+
+{% block title %}Flights app{% endblock title %}
+
+{% block body %}
+    <h3>Web page of flights</h3>
+        <ul>
+            {% for flight in flights %}
+                <li>Flight {{flight.id}}: {{flight.origin}} to {{flight.destination}} 
+                will last {{flight.duration}}min</li>
+            {% endfor %}
+        </ul>
+{% endblock body %}
