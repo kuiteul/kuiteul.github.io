@@ -1,0 +1,168 @@
+body {
+    background-color: #ECEEF1;
+    width: 100% !important;
+    margin: 0% !important;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.account {
+    background-color: #0F7ACA;
+}
+
+
+.header {
+
+    width: 20%;
+    padding: 0% !important;
+    margin-top: 1%;
+}
+
+.header:nth-child(1){
+    margin-left: 70%;
+}
+
+.header:nth-child(2){
+    width: 9%;
+}
+.header ul {
+    list-style-type: none;
+}
+
+.header ul li {
+    font-size: 11px;
+    line-height: 5px;
+    text-align: right;
+}
+.header ul li:nth-child(2) {
+    line-height: 1px;
+}
+
+.header .sign {
+    background-color: #0077C5;
+    border-color: black !important;
+    border: 0.5px solid;
+}
+
+h1, h2, h3, h4, h5, h6, .warns{
+    text-align: center;
+}
+
+.form {
+    width: 40%;
+    margin-left: 30%;
+}
+
+.form #formular {
+    width: 70%;
+    margin-left: 15%;
+    border: 1px solid;
+    border-color: rgb(156, 154, 154);
+    background-color: white;
+    
+}
+
+#forms {
+    padding: 8%;
+}
+
+form {
+    width: 95%;
+    margin-left: 2.5%;
+}
+
+label{
+    margin-bottom: 10px;
+    opacity: 0.7;
+}
+
+#formular h2{
+    font-size: 20px;
+   
+}
+
+#formular p {
+    font-size: 14px;
+    text-align: center;
+}
+
+#formular .warns {
+    font-size: 10px;
+}
+
+.warns:nth-child(2) {
+    font-style: italic;
+}
+.bold {
+    font-weight: bold;
+}
+
+.p-warns {
+    font-size: 12px;
+    line-height: 2px;
+    opacity: 0.7;
+}
+
+
+.nav-bottom-form {
+    font-size: 11px;
+    margin-top: 2%;
+    
+}
+
+.nav-bottom-form a {
+    color: black;
+    opacity: 0.8;
+}
+
+.nav-bottom-form a:hover {
+    text-decoration: underline;
+}
+
+#para {
+    margin-bottom: 5%;
+}
+
+footer {
+    text-align: left;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+    background-color: white;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+#menu li a{
+   
+   margin: 3px;
+   color: black;
+   opacity: 0.8;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.footer-form {
+    background-color: #ECEEF1;
+    height: 60px;
+    
+
+}
+
+.footer-form p {
+    opacity: 0.7;
+    font-size: 10px !important;
+    text-align: center;
+    padding: 5%;
+}
+
+#after-h2 {
+    width: 90%;
+    margin-left: 5%;
+    opacity: 0.7;
+}
