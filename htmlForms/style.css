@@ -9,21 +9,20 @@ body {
     background-color: #0F7ACA;
 }
 
+.in {
+    position: relative;
+    margin-left: 90%;
+    margin-top: 25%;
+    z-index: 1;
+}
 
 .header {
 
-    width: 20%;
     padding: 0% !important;
     margin-top: 1%;
 }
 
-.header:nth-child(1){
-    margin-left: 70%;
-}
 
-.header:nth-child(2){
-    width: 9%;
-}
 .header ul {
     list-style-type: none;
 }
@@ -47,14 +46,10 @@ h1, h2, h3, h4, h5, h6, .warns{
     text-align: center;
 }
 
-.form {
-    width: 40%;
-    margin-left: 30%;
-}
+
 
 .form #formular {
-    width: 70%;
-    margin-left: 15%;
+   
     border: 1px solid;
     border-color: rgb(156, 154, 154);
     background-color: white;
@@ -68,6 +63,8 @@ h1, h2, h3, h4, h5, h6, .warns{
 form {
     width: 95%;
     margin-left: 2.5%;
+    display: flex;
+    flex-direction: column;
 }
 
 label{
@@ -124,11 +121,9 @@ label{
 
 footer {
     text-align: left;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
     width: 100%;
     background-color: white;
+    font-size: 14px;
 }
 
 footer ul {
@@ -166,3 +161,4 @@ a {
     margin-left: 5%;
     opacity: 0.7;
 }
+
