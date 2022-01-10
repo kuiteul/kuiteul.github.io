@@ -15,4 +15,19 @@ for check in list_all do
         list_accepted.push(check)
     end
 end
-print list_accepted
+
+
+=begin
+    below is the code with iterator each
+rescue => exception
+    
+=end
+list_all.each {|element| print "#{element} "}
+puts " "
+print list_all.select do |element|
+    element.each do |take|
+        if take == element
+            puts "#{take}"
+        end
+    end
+end
