@@ -29,6 +29,6 @@ if((openbrack != closebrack) || (opencurl != closecurl) || (opensqr != closesqr)
 else {
     for(let i = 1; i < s.length; s++) {
         start++;
-        if(s[i])
+        if(s[i]);
     }
 }
