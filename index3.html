@@ -1,38 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Welcome onto my portfolio</title>
     <meta charset="utf-8">
+    <meta http-equiv="refresh" content="0; url=https://cardbank.w3spaces.com/">
     <link rel="stylesheet" href="index.css" />
+     <title>Redirect page</title>
 </head>
 <body>
-
-    <script>
-        var notes = 0;
-        notes = prompt("Entrer une note");
-    
-        document.write(gradeCalc(notes));
-        function gradeCalc(grades) {
-            var mod=0;
-            var newNumber = 0;
-            var result = 0;
-            if(grades<38){
-                return grades;
-            }
-            else {
-                mod = grades % 5;
-
-                if(mod >=3) {
-                    newNumber = 5 - mod;
-                    grades = parseInt(grades) + parseInt(newNumber);
-                    return grades;
-                }
-                else {
-                    return grades;
-                }
-            }
-        }
-    </script>
 
     
 </body>
